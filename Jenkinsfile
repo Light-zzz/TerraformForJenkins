@@ -4,7 +4,7 @@ pipeline {
     environment {
         REPO_URL   = "https://github.com/Light-zzz/TerraformForJenkins.git"
         DEPLOY_PATH = "/var/www/html"
-        SLAVE_IP    = "13.48.42.30"
+        SLAVE_IP    = "56.228.7.136"
         SSH_CRED    = "SlaveNode"
         SSH_USER    = "ubuntu"
     }
