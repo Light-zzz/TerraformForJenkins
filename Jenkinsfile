@@ -2,6 +2,7 @@ pipeline {
     agent { label 'SlaveNode' }
 
     environment {
+        REPO_URL   = "https://github.com/Light-zzz/TerraformForJenkins.git"
         DEPLOY_PATH = "/var/www/html"
         SLAVE_IP    = "13.48.42.30"
         SSH_CRED    = "SlaveNode"
@@ -12,7 +13,8 @@ pipeline {
 
         stage('Checking SCM') {
             steps {
-                checkout SCM
+                echo "cloning repo form github"
+                git url: "${REPO_URL}"
             }
         }
 
