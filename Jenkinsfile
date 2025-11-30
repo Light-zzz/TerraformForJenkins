@@ -1,5 +1,5 @@
 pipeline {
-    agent any
+    agent {lable : slave1-web}
 
     environment {
         REPO_URL = "https://github.com/Light-zzz/TerraformForJenkins.git"   // CHANGE
