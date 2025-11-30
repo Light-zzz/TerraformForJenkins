@@ -13,8 +13,8 @@ pipeline {
 
         stage('Checking SCM') {
             steps {
-                echo "cloning repo form github"
-                git url: "${REPO_URL}"
+                echo "Checking out code..."
+                checkout scm
             }
         }
 
