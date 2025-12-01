@@ -1,11 +1,11 @@
 pipeline {
-    agent { label 'SlaveNode' }  //Create node and change the node name
+    agent { label 'Webslave' }  //Create node and change the node name
 
     environment {
         REPO_URL   = "https://github.com/Light-zzz/TerraformForJenkins.git" //Change the git repo paste your repo
         DEPLOY_PATH = "/var/www/html"  //This is the path where all web file moved
-        SLAVE_IP    = "56.228.7.136"   //change the IP and give the slave IP 
-        SSH_CRED    = "SlaveNode"      //Change the credential of slave VM
+        SLAVE_IP    = "51.20.144.247"   //change the IP and give the slave IP 
+        SSH_CRED    = "WebSlave"      //Change the credential of slave VM
         SSH_USER    = "ubuntu"         //This is base on ubuntu do not change the username
     }
 
