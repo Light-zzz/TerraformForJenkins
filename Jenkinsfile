@@ -5,7 +5,7 @@ pipeline {
         REPO_URL   = "https://github.com/Light-zzz/TerraformForJenkins.git" //Change the git repo paste your repo
         DEPLOY_PATH = "/var/www/html"  //This is the path where all web file moved
         SLAVE_IP    = "13.60.69.183"   //change the IP and give the slave IP 
-        SSH_CRED    = "WebSlave-1"      //Change the credential of slave VM
+        SSH_CRED    = "webslave-1"      //Change the credential of slave VM
         SSH_USER    = "ubuntu"         //This is base on ubuntu do not change the username
     }
 
