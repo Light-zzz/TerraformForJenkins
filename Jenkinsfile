@@ -1,5 +1,5 @@
 pipeline {
-    agent { label 'Webslave' }  //Create node and change the node name
+    agent { label 'webslave' }  //Create node and change the node name
 
     environment {
         REPO_URL   = "https://github.com/Light-zzz/TerraformForJenkins.git" //Change the git repo paste your repo
