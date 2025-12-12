@@ -1,0 +1,12 @@
+aws_region = "eu-north-1"
+vpc_cidr = "10.0.0.0/16"
+public_subnet_cidr = "10.0.3.0/24"
+private_subnet_cidr = "10.0.4.0/24"
+ami = "ami-0fa91bc90632c73c9" # example Ubuntu AMI - CHANGE to valid for your region
+key_name = "NewAccountKey"
+instance_type_master = "t3.micro"
+instance_type_slave = "t3.micro"
+ssh_cidr = "0.0.0.0/0"
+availability_zone_1a = "eu-north-1a"
+availability_zone_1b = "eu-north-1b"
+availability_zone_1c = "eu-north-1c"
